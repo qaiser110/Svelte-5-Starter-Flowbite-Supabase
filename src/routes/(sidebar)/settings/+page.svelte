@@ -1,24 +1,24 @@
 <script lang="ts">
-	import Accounts from '../../utils/settings/Accounts.svelte';
-	import Alerts from '../../utils/settings/Alerts.svelte';
-	import Emails from '../../utils/settings/Emails.svelte';
-	import GeneralInfo from '../../utils/settings/GeneralInfo.svelte';
-	import LanguageTime from '../../utils/settings/LanguageTime.svelte';
-	import PasswordInfo from '../../utils/settings/PasswordInfo.svelte';
-	import ProfilePicture from '../../utils/settings/ProfilePicture.svelte';
-	import Sessions from '../../utils/settings/Sessions.svelte';
-	import SocialAccounts from '../../utils/settings/SocialAccounts.svelte';
+	import Accounts from '@/components/pages/settings/Accounts.svelte';
+	import Alerts from '@/components/pages/settings/Alerts.svelte';
+	import Emails from '@/components/pages/settings/Emails.svelte';
+	import GeneralInfo from '@/components/pages/settings/GeneralInfo.svelte';
+	import LanguageTime from '@/components/pages/settings/LanguageTime.svelte';
+	import PasswordInfo from '@/components/pages/settings/PasswordInfo.svelte';
+	import ProfilePicture from '@/components/pages/settings/ProfilePicture.svelte';
+	import Sessions from '@/components/pages/settings/Sessions.svelte';
+	import SocialAccounts from '@/components/pages/settings/SocialAccounts.svelte';
 	import { Breadcrumb, BreadcrumbItem, Heading } from 'flowbite-svelte';
-	import Footer from '../Footer.svelte';
+	import Footer from '@/components/layout/Footer.svelte';
 
-	import { imagesPath } from '../../utils/variables';
-	import Users from '../../data/users.json';
-	import MetaTag from '../../utils/MetaTag.svelte';
+	import { imagesPath } from '@/utils/variables';
+	import Users from '@data/users.json';
+	import MetaTag from '@/components/MetaTag.svelte';
 
 	const path: string = '/settings';
-  const description: string = 'Settings examaple - Flowbite Svelte Admin Dashboard';
-  const title: string = 'Flowbite Svelte Admin Dashboard - Settings';
-  const subtitle: string = 'Settings';
+	const description: string = 'Settings examaple - Flowbite Svelte Admin Dashboard';
+	const title: string = 'Flowbite Svelte Admin Dashboard - Settings';
+	const subtitle: string = 'Settings';
 </script>
 
 <MetaTag {path} {description} {title} {subtitle} />

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Playground from '../../../(no-sidebar)/playground/stacked/Playground.svelte';
-	import MetaTag from '../../../utils/MetaTag.svelte';
-	import Footer from '../../Footer.svelte';
+	import Playground from '@/components/pages/Playground.svelte';
+	import MetaTag from '@/components/MetaTag.svelte';
+	import Footer from '@/components/layout/Footer.svelte';
 
 	const path: string = '/playground/sidebar';
-  const description: string = 'Playground Sidebar example - Flowbite Svelte Admin Dashboard';
+	const description: string = 'Playground Sidebar example - Flowbite Svelte Admin Dashboard';
 	const metaTitle: string = 'Flowbite Svelte Admin Dashboard - Playground Sidebar';
-  const subtitle: string = 'Playground Sidebar';
+	const subtitle: string = 'Playground Sidebar';
 </script>
 
 <MetaTag {path} {description} title={metaTitle} {subtitle} />

@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import sendApiError from '../../../utils/common/send-api-error';
+import sendApiError from '@/utils/send-api-error';
 
 export const POST: RequestHandler = async ({ request, locals }) => {
 	if (!request || typeof request.json !== 'function') {
@@ -19,7 +19,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 			email,
 			password,
 			options: {
-				emailRedirectTo: `/success/auth?ctx=signup-success`,
+				emailRedirectTo: `/auth/success?ctx=signup-success`,
 			},
 		});
 

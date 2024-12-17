@@ -10,7 +10,7 @@
 		Toggle,
 	} from 'flowbite-svelte';
 	import { ArrowLeftToBracketOutline, CloseOutline } from 'flowbite-svelte-icons';
-	import MetaTag from '../../../utils/MetaTag.svelte';
+	import MetaTag from '@/components/MetaTag.svelte';
 	import ComparisonTable from './ComparisonTable.svelte';
 	import Faq from './FAQ.svelte';
 	import Footer from './Footer.svelte';

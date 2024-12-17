@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import LnkLogin from '@/components/Links/LnkLogin.svelte';
-	import Success from '../../utils/auth/Success.svelte';
+	import LnkLogin from '@/components/links/LnkLogin.svelte';
 	import { A, Card } from 'flowbite-svelte';
 
 	let site = {

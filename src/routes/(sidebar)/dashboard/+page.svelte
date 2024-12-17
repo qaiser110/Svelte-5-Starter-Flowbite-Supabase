@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Dashboard from '../../utils/dashboard/Dashboard.svelte';
-	import MetaTag from '../../utils/MetaTag.svelte';
-	import Footer from '../Footer.svelte';
+	import Dashboard from '@/components/pages/dashboard/Dashboard.svelte';
+	import MetaTag from '@/components/MetaTag.svelte';
+	import Footer from '@/components/layout/Footer.svelte';
 	export let data;
 
 	const path: string = '/dashboard';

@@ -33,6 +33,5 @@ export const GET: RequestHandler = async ({ url, locals: { supabase } }) => {
 		}
 	}
 
-	redirectTo.pathname = '/auth/error?ctx=magic-link-sent';
-	redirect(303, redirectTo);
+	redirect(303, '/auth/error?ctx=magic-link-sent');
 };

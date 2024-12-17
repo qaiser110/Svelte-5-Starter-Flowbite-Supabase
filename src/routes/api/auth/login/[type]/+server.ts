@@ -1,6 +1,6 @@
 import { fail, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import sendApiError from '../../../../utils/common/send-api-error';
+import sendApiError from '@/utils/send-api-error';
 
 export const POST: RequestHandler = async ({ params, request, locals }) => {
 	if (!request || typeof request.json !== 'function') {
@@ -23,7 +23,7 @@ export const POST: RequestHandler = async ({ params, request, locals }) => {
 			const { error } = await locals.supabase.auth.signInWithOtp({
 				email,
 				// options: {
-				// 	emailRedirectTo: `/success/auth?ctx=magic-link-sent`,
+				// 	emailRedirectTo: `/auth/success?ctx=magic-link-sent`,
 				// },
 			});
 

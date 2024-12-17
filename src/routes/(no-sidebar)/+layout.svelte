@@ -1,8 +1,8 @@
 <script>
-	import Footer from '../(no-sidebar)/Footer.svelte'
-	import Navbar from '../(sidebar)/Navbar.svelte'
+	import Footer from '@/components/layout/Footer.svelte';
+	import Navbar from '@/components/layout/Navbar.svelte';
 
-	import '../../app.css'
+	// import '../../app.css';
 </script>
 
 <header

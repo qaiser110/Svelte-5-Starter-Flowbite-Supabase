@@ -1,8 +1,8 @@
 <script>
-	import '../../app.css'
-	import Navbar from './Navbar.svelte'
-	import Sidebar from './Sidebar.svelte'
-	let drawerHidden = false
+	// import '../../app.css';
+	import Navbar from '@/components/layout/Navbar.svelte';
+	import Sidebar from '@/components/layout/Sidebar.svelte';
+	let drawerHidden = false;
 </script>
 
 <header
