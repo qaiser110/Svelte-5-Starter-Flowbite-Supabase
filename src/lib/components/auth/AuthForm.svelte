@@ -16,7 +16,7 @@
 
 	const termsLink = '/';
 	const loginLink = '/login';
-	const forgotPasswordLink = '/auth/forgot-password';
+	const forgotPasswordLink = '/forgot-password';
 
 	const mainClass = 'bg-gray-50 dark:bg-gray-900 w-full';
 	const mainDivClass =

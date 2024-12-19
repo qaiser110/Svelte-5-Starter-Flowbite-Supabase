@@ -8,7 +8,7 @@ export const POST: RequestHandler = async ({ params, request, locals }) => {
 		throw new Error('Invalid request object');
 	}
 
-	// http://localhost:5173/auth/sign-in?type=passwordless
+	// http://localhost:5173/login?type=passwordless
 	if (!['passwordless', 'password'].includes(params.type)) {
 		return sendApiError('Auth type must be passwordless or password');
 	}
@@ -23,7 +23,7 @@ export const POST: RequestHandler = async ({ params, request, locals }) => {
 			const { error } = await locals.supabase.auth.signInWithOtp({
 				email,
 				// options: {
-				// 	emailRedirectTo: `/auth/success?ctx=magic-link-sent`,
+				// 	emailRedirectTo: `/success?ctx=magic-link-sent`,
 				// },
 			});
 

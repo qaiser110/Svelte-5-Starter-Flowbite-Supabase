@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Playground from '@/components/pages/Playground.svelte';
+	import PlaygroundPage from '@/components/pages/PlaygroundPage.svelte';
 	import MetaTag from '@/components/MetaTag.svelte';
 	import Footer from '@/components/layout/Footer.svelte';
 
@@ -15,6 +15,6 @@
 	id="main-content"
 	class="relative mx-auto h-full w-full overflow-y-auto bg-gray-50 p-4 dark:bg-gray-900"
 >
-	<Playground />
+	<PlaygroundPage />
 </div>
 <Footer />

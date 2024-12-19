@@ -25,7 +25,7 @@
 		console.log(data);
 	};
 
-	const path: string = '/auth/reset-password';
+	const path: string = '/reset-password';
 	const description: string = 'Reset password example - Flowbite Svelte Admin Dashboard';
 	const metaTitle: string = 'Flowbite Svelte Admin Dashboard - Reset password';
 	const subtitle: string = 'Reset password';

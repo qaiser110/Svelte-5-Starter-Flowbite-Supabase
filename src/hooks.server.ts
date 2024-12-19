@@ -39,9 +39,9 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 		const routeId = event.route.id;
 
-		if (!user && routeId?.startsWith('/(sidebar)')) redirect(303, '/auth/sign-in');
+		if (!user && routeId?.startsWith('/(sidebar)')) redirect(303, '/login');
 
-		if (user && routeId?.startsWith('/auth/')) redirect(303, '/');
+		if (user && routeId?.startsWith('/(auth)')) redirect(303, '/');
 
 		if (error) {
 			// JWT validation has failed

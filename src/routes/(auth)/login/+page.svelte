@@ -7,13 +7,19 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 
+	$effect(() => {
+		if ($page.data.user) {
+			goto('/');
+		}
+	});
+
 	const loginType = $page.url.searchParams.get('type');
 
 	let errors = $state.raw({ email: null });
 	let isPasswordless: boolean = $state(loginType === 'passwordless');
 
 	const title: string = 'Sign in';
-	const path: string = '/auth/sign-in';
+	const path: string = '/login';
 	const description: string = 'Sign in  to platform';
 
 	const onSubmit = async (e: Event) => {
@@ -35,7 +41,7 @@
 		const resJson = await res.json();
 
 		if (!res.ok) {
-			console.log('/auth/sign-in.svelte resJson', resJson);
+			console.log('/login.svelte resJson', resJson);
 			console.log('res', res);
 			if (resJson.errors) {
 				errors = { ...errors, ...resJson.errors };
@@ -43,7 +49,7 @@
 			}
 		} else {
 			console.log('resJson', resJson);
-			goto('/auth/success?ctx=magic-link-sent');
+			goto('/success?ctx=magic-link-sent');
 		}
 	};
 </script>

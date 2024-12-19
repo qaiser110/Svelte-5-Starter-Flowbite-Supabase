@@ -13,7 +13,7 @@
 		console.log(data);
 	};
 
-	const path: string = '/auth/forgot-password';
+	const path: string = '/forgot-password';
 	const description: string = 'Forgot password example - Flowbite Svelte Admin Dashboard';
 	const title: string = 'Flowbite Svelte Admin Dashboard - Forgot password';
 	const subtitle: string = 'Forgot password';

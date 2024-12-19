@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NotFound from '@/components/pages/NotFound.svelte';
+	import NotFoundPage from '@/components/pages/NotFoundPage.svelte';
 </script>
 
-<NotFound />
+<NotFoundPage />

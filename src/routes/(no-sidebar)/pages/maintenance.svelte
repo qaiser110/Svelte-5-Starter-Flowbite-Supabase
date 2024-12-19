@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Maintenance from '@/components/pages/Maintenance.svelte';
+	import MaintenancePage from '@/components/pages/MaintenancePage.svelte';
 </script>
 
-<Maintenance />
+<MaintenancePage />

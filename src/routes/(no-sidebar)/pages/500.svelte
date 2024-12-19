@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ServerError from '@/components/pages/ServerError.svelte';
+	import ServerErrorPage from '@/components/pages/ServerErrorPage.svelte';
 </script>
 
-<ServerError />
+<ServerErrorPage />

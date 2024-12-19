@@ -1,14 +1,13 @@
-// src/lib/auth/utils.ts
 import type { User } from '@supabase/supabase-js';
 import { redirect } from '@sveltejs/kit';
 
 export function requireAuth(user: User) {
 	if (!user) {
-		throw redirect(303, '/auth/sign-in');
+		throw redirect(303, '/login');
 	}
 }
 
-export function requireGuest(user: User) {
+export function requireSignedOut(user: User) {
 	if (user) {
 		throw redirect(303, '/');
 	}
@@ -17,7 +16,7 @@ export function requireGuest(user: User) {
 /*
 export function requireRole(user: User, requiredRole: string) {
 	if (!user) {
-		throw redirect(303, '/auth/sign-in');
+		throw redirect(303, '/login');
 	}
 
 	if (!user.roles.includes(requiredRole)) {

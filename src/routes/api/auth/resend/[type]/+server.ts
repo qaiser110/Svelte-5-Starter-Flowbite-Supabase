@@ -29,7 +29,7 @@ export const POST: RequestHandler = async ({ params, request, locals }) => {
 			const { error } = await locals.supabase.auth.signInWithOtp({
 				email,
 				options: {
-					emailRedirectTo: `/auth/success?ctx=account-created`,
+					emailRedirectTo: `/success?ctx=account-created`,
 				},
 			});
 

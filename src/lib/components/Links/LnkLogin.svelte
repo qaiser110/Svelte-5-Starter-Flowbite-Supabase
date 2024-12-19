@@ -3,7 +3,7 @@
 
 	export let loginText;
 	export let size: undefined | 'sm' | 'md' | 'lg' = 'md';
-	export let loginHref = '/auth/sign-in';
+	export let loginHref = '/login';
 	export let loginClass = `text-${size} text-gray-500 dark:text-gray-400`;
 </script>
 

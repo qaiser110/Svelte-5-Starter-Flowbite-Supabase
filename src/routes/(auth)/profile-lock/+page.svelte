@@ -15,7 +15,7 @@
 		name: Users[0].name,
 	};
 
-	const path: string = '/auth/profile-lock';
+	const path: string = '/profile-lock';
 	const description: string = 'Profile lock example - Flowbite Svelte Admin Dashboard';
 	const metaTitle: string = 'Flowbite Svelte Admin Dashboard - Profile lock';
 	const subtitle: string = 'Profile lock';

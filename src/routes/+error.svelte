@@ -1,13 +1,15 @@
 <script lang="ts">
 	// import '../app.css';
 	import { page } from '$app/stores';
-	import NotFound from '@/components/pages/NotFound.svelte';
-	import ServerError from '@/components/pages/ServerError.svelte';
+	import MetaTag from '@/components/MetaTag.svelte';
+	import MaintenancePage from '@/components/pages/MaintenancePage.svelte';
+	import NotFoundPage from '@/components/pages/NotFoundPage.svelte';
+	import ServerErrorPage from '@/components/pages/ServerErrorPage.svelte';
 
 	const pages = {
-		400: Maintenance,
-		404: NotFound,
-		500: ServerError,
+		400: MaintenancePage,
+		404: NotFoundPage,
+		500: ServerErrorPage,
 	} as const;
 
 	type ErrorCode = keyof typeof pages;
@@ -17,9 +19,6 @@
 		.map((x) => +x)
 		.reduce((p, c) => (p < status ? c : p)) as ErrorCode;
 	const component = pages[index];
-
-	import MetaTag from '@/components/MetaTag.svelte';
-	import Maintenance from '@/components/pages/Maintenance.svelte';
 
 	const path: string = `/errors/${index}`;
 	const description: string = `${index} - Flowbite Svelte Admin Dashboard`;

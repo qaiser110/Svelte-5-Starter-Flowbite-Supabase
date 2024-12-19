@@ -1,6 +1,6 @@
 <script lang="ts">
 	import MetaTag from '@/components/MetaTag.svelte';
-	import Playground from '@/components/pages/Playground.svelte';
+	import PlaygroundPage from '@/components/pages/PlaygroundPage.svelte';
 
 	const path: string = '/playground/stacked';
 	const description: string = 'Playground stacked example - Flowbite Svelte Admin Dashboard';
@@ -14,5 +14,5 @@
 	id="main-content"
 	class="relative mx-auto h-full w-full max-w-screen-2xl overflow-y-auto bg-gray-50 p-4 dark:bg-gray-900"
 >
-	<Playground />
+	<PlaygroundPage />
 </div>

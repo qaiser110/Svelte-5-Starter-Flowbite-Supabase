@@ -19,7 +19,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 			email,
 			password,
 			options: {
-				emailRedirectTo: `/auth/success?ctx=signup-success`,
+				emailRedirectTo: `/success?ctx=signup-success`,
 			},
 		});
 
