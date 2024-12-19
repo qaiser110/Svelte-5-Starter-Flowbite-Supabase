@@ -3,7 +3,7 @@ import type { Actions, RequestEvent } from './$types';
 import { requireAuth } from '@/auth/utils';
 
 export async function load(event: RequestEvent) {
-	const {user} = event.locals
+	const { user } = event.locals;
 	requireAuth(user);
 	return { user };
 }
