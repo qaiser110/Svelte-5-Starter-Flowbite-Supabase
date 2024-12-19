@@ -3,11 +3,9 @@ import type { Actions, RequestEvent } from './$types';
 import { requireAuth } from '@/auth/utils';
 
 export async function load(event: RequestEvent) {
-	// const { user } = await parent();
-	// requireAuth(user);
-	console.log('event.locals.user', event.locals.user);
-
-	return {};
+	const {user} = event.locals
+	requireAuth(user);
+	return { user };
 }
 
 export const actions: Actions = {
