@@ -24,3 +24,9 @@ export function requireRole(user: User, requiredRole: string) {
 	}
 }
 */
+
+export interface SignUpData {
+	email: string;
+	password: string;
+	confirmPassword: string;
+}

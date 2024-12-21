@@ -1,0 +1,7 @@
+<html>
+  <body>
+    <h2> H2: Confirmation Link</h2>
+		<p>Click this link to confirm your registered email:</p>
+    <p><a href="{{.SiteURL}}/auth/verify/confirmation?token_hash={{.TokenHash}}&type=email&email={{.Email}}&redirectTo={{ .RedirectTo }}">Confirm your email</a></p>
+  </body>
+</html>

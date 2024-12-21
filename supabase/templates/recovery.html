@@ -1,0 +1,7 @@
+<html>
+  <body>
+    <h2> H2: Recovery link</h2>
+		<p>Follow this link for account recovery:</p>
+    <p><a href="{{.SiteURL}}/auth/verify/recovery?token_hash={{.TokenHash}}&type=email&email={{.Email}}&redirectTo={{ .RedirectTo }}">Confirm your email</a></p>
+  </body>
+</html>

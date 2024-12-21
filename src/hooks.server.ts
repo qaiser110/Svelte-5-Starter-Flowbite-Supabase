@@ -4,6 +4,10 @@ import { redirect, type Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.supabase = createServerClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY, {
+		// auth: {
+		// 	detectSessionInUrl: true,
+		// 	flowType: 'pkce',
+		// },
 		cookies: {
 			getAll: () => event.cookies.getAll(),
 			/**

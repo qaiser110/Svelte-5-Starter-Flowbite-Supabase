@@ -60,12 +60,12 @@ test('errors/500 has expected h1', async ({ page }) => {
 
 // authentication
 test('sign-in page has expected h1', async ({ page }) => {
-	await page.goto('auth/sign-in');
+	await page.goto('login');
 	expect(await page.textContent('h1')).toContain('Sign in to platform');
 });
 
-test('sign-up page has expected h1', async ({ page }) => {
-	await page.goto('auth/sign-up');
+test('signup page has expected h1', async ({ page }) => {
+	await page.goto('signup');
 	expect(await page.textContent('h1')).toContain('Create a Free Account');
 });
 
@@ -75,12 +75,12 @@ test('Forgot password page has expected h1', async ({ page }) => {
 });
 
 test('Reset password page has expected h1', async ({ page }) => {
-	await page.goto('auth/reset-password');
+	await page.goto('reset-password');
 	expect(await page.textContent('h1')).toContain('Reset your password');
 });
 
 test('Profile lock page has expected h1', async ({ page }) => {
-	await page.goto('auth/profile-lock');
+	await page.goto('profile-lock');
 	expect(await page.textContent('h1')).toContain('Neil Sims');
 });
 

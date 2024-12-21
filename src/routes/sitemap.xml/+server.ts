@@ -11,13 +11,13 @@ const pages: string[] = [
 	'errors/400',
 	'errors/404',
 	'errors/500',
-	'auth/login',
-	'auth/sign-up',
-	'auth/forgot-password',
-	'auth/reset-password',
-	'auth/profile-lock',
+	'login',
+	'signup',
+	'forgot-password',
+	'reset-password',
+	'profile-lock',
 	'playground/stacked',
-	'playground/sidebar'
+	'playground/sidebar',
 ];
 
 /** @type {import('./$types').RequestHandler} */
