@@ -1,7 +1,7 @@
 <script lang="ts">
 	let {
 		name = 'Site Name',
-		logoLinkClass = 'mb-8 flex items-center justify-center text-2xl font-semibold dark:text-white lg:mb-10',
+		logoLinkClass = 'mb-1 flex items-center justify-center text-2xl font-semibold dark:text-white lg:mb-6',
 		logoImgClass = 'mr-4 h-11',
 		img = '/images/icon-logo.svg',
 		imgAlt = 'Site Logo1',

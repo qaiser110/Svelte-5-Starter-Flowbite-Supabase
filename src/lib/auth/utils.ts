@@ -1,4 +1,4 @@
-import type { User } from '@supabase/supabase-js';
+import { type User } from '@supabase/supabase-js';
 import { redirect } from '@sveltejs/kit';
 
 export function requireAuth(user: User) {

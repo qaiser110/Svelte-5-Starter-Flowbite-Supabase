@@ -4,6 +4,7 @@
 
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { Toaster } from 'svelte-sonner';
 
 	let { supabase, session } = data;
 
@@ -34,5 +35,7 @@
 <svelte:head>
 	<title>User Management</title>
 </svelte:head>
+
+<Toaster richColors />
 
 {@render children()}
