@@ -3,7 +3,7 @@
 	import { logger } from '@/utils/logger';
 	import { A } from 'flowbite-svelte';
 	import AlertBox from '../ui/AlertBox.svelte';
-	import LogoComponent from '../ui/LogoComponent.svelte';
+	import LogoComponent from '@/components/ui/LogoComponent.svelte';
 
 	let resendLoading = $state(false);
 	let resendSuccess = $state(false);

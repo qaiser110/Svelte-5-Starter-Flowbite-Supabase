@@ -1,13 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import LnkLogin from '@/components/links/LnkLogin.svelte';
 	import LinkSentPage from '@/components/pages/LinkSentPage.svelte';
-	import MessagePage from '@/components/pages/MessagePage.svelte';
 	import { logger } from '@/utils/logger';
-	import { error, redirect } from '@sveltejs/kit';
-	import { A } from 'flowbite-svelte';
-	import Error from '../../../../+error.svelte';
 	import { onMount } from 'svelte';
 
 	interface SuccessMessage {

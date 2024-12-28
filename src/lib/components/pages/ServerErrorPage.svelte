@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { imagesPath } from '@/utils/variables';
-	import { Button, P } from 'flowbite-svelte';
+	import { P } from 'flowbite-svelte';
+	import BackToHome from '@/components/ui/buttons/BackToHome.svelte';
 	export let title = 'Something has gone seriously wrong';
 	export let description =
 		"It's always time for a coffee break. We should be back by the time you finish your coffee.";
@@ -8,8 +9,6 @@
 		src: imagesPath('illustrations/500.svg'),
 		alt: 'astronaut',
 	};
-	export let btnHref = '/';
-	export let btnTitle = 'Go back home';
 	export let mainClass = 'bg-gray-50 dark:bg-gray-900';
 	export let mainDivClass =
 		'flex flex-col justify-center items-center px-6 mx-auto h-screen xl:px-0 dark:bg-gray-900';
@@ -31,20 +30,7 @@
 			<P class="mb-5 text-base font-normal text-gray-500 dark:text-gray-400 md:text-lg">
 				{description}
 			</P>
-			<Button href={btnHref}>
-				<svg
-					class="-ml-1 mr-2 h-5 w-5"
-					fill="currentColor"
-					viewBox="0 0 20 20"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						fill-rule="evenodd"
-						d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-						clip-rule="evenodd"
-					/></svg
-				>
-				{btnTitle}
-			</Button>
+			<BackToHome />
 		</div>
 	</div>
 </main>

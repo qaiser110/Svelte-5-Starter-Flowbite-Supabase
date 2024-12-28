@@ -1,9 +1,9 @@
 <script lang="ts">
-	import ProfileLock from '../../utils/auth/ProfileLock.svelte';
 	import { Input, Label } from 'flowbite-svelte';
 	import Users from '@data/users.json';
 	import { avatarPath, imagesPath } from '@/utils/variables';
 	import MetaTag from '@/components/MetaTag.svelte';
+	import ProfileLock from '@/components/pages/auth/ProfileLock.svelte';
 	const onSubmit = (e: Event) => {
 		const formData = new FormData(e.target as HTMLFormElement);
 		console.log(formData);

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ForgotPassword from '../../utils/auth/ForgotPassword.svelte';
 	import { Label, Input, Checkbox, A } from 'flowbite-svelte';
 	import MetaTag from '@/components/MetaTag.svelte';
+	import ForgotPassword from '@/components/pages/auth/ForgotPassword.svelte';
 	const onSubmit = (e: Event) => {
 		const formData = new FormData(e.target as HTMLFormElement);
 

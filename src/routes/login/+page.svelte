@@ -16,9 +16,9 @@
 		}
 	});
 
-	const title: string = 'Sign in';
+	const title: string = 'Sign in / Register';
 	const path: string = '/login';
-	const description: string = 'Sign in  to platform';
+	const description: string = 'Sign in or Register to platform';
 
 	const mainClass = 'bg-gray-50 dark:bg-gray-900 w-full pt-6';
 	const mainDivClass =
