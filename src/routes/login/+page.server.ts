@@ -30,8 +30,8 @@ export const actions: Actions = {
 
 			if (!form.valid) return fail(400, { form });
 
-			let text = 'Submitted successfully';
-			let redirectTo = '';
+			let text;
+			let redirectTo;
 			let authResp: AuthResponse | null = null;
 
 			switch (form.data.loginType) {
@@ -46,24 +46,25 @@ export const actions: Actions = {
 					break;
 				case LoginType.pwdLess:
 					logger.info('TODO: pwdLess');
-					text = 'Logged in Successfully!';
+					redirectTo = `/auth/sent/magic-link?email=${form.data.email}`;
 					authResp = await supabase.auth.signInWithOtp({
 						email: form.data.email,
 					});
 					break;
 				case LoginType.register:
 					logger.info('TODO: register');
-					text = 'Verification link sent.';
+					redirectTo = `/auth/sent/signup-link?email=${form.data.email}`;
 					authResp = await supabase.auth.signUp({
 						email: form.data.email,
 						password: form.data.password,
-						options: {
-							emailRedirectTo: `${request.headers.get('origin')}/auth/callback`,
-						},
 					});
 					break;
 				case LoginType.registerMobile:
 					logger.info('TODO: registerMobile');
+					return setError(form, '', 'Phone Auth not yet implemented. Please use another method.');
+					// authResp = await supabase.auth.signInWithOtp({
+					// 	phone: form.data.phone,
+					// });
 					break;
 
 				default:

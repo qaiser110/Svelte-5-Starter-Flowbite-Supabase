@@ -4,6 +4,7 @@
 	import { A } from 'flowbite-svelte';
 	import AlertBox from '../ui/AlertBox.svelte';
 	import LogoComponent from '@/components/ui/LogoComponent.svelte';
+	import BackToHome from '../ui/buttons/BackToHome.svelte';
 
 	let resendLoading = $state(false);
 	let resendSuccess = $state(false);
@@ -116,7 +117,7 @@
 				{/if} -->
 
 				{#if backToHomeLink}
-					<A href="/">Back to home</A>
+					<BackToHome />
 				{/if}
 			</div>
 		</div>

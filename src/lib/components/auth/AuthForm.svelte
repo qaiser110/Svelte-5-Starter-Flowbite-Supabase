@@ -28,11 +28,8 @@
 		onUpdated({ form }) {
 			console.log('onUpdated > form.message', form.message);
 			if (form.message) {
-				// Display the message using a toast library
-				toast.success(form.message.text);
-				if (form.message.redirectTo) {
-					goto(form.message.redirectTo);
-				}
+				if (form.message.text) toast.success(form.message.text);
+				if (form.message.redirectTo) goto(form.message.redirectTo);
 			}
 		},
 	});
@@ -47,7 +44,10 @@
 	});
 
 	function changeLoginType(newloginType: string) {
+		const email = $form.email;
 		reset();
+		$form.email = email;
+
 		if (newloginType?.startsWith('register')) {
 			$form.loginType = newloginType;
 		} else {
