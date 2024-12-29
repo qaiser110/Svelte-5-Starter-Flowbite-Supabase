@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { LoginType } from '@/schemas/auth';
+	import { logger } from '@/utils/logger';
 	import {
 		A,
 		Alert,
@@ -26,7 +27,7 @@
 	const { form, errors, enhance, reset, allErrors, submitting } = superForm(data.form, {
 		resetForm: true,
 		onUpdated({ form }) {
-			console.log('onUpdated > form.message', form.message);
+			logger.debug('AuthForm > onUpdated > form.message', form.message);
 			if (form.message) {
 				if (form.message.text) toast.success(form.message.text);
 				if (form.message.redirectTo) goto(form.message.redirectTo);

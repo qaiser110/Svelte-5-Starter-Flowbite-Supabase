@@ -14,12 +14,7 @@
 		session = data.session;
 	});
 
-	// console.log('~~~~~ $inspect(data);');
-	$inspect(`$inspect ~~~~~ user: ${data.user?.email}`);
-	// $inspect({
-	// 	user: data.user?.email,
-	// 	// session: data.session,
-	// });
+	$inspect(`$inspect > user.email: ${data.user?.email}`);
 
 	onMount(() => {
 		const { data: authListener } = supabase.auth.onAuthStateChange((event, newSession) => {
