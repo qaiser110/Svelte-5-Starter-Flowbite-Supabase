@@ -1,10 +1,10 @@
 <script lang="ts">
 	// import '../app.css';
 	import { page } from '$app/stores';
-	import MetaTag from '@/components/MetaTag.svelte';
-	import MaintenancePage from '@/components/pages/MaintenancePage.svelte';
-	import NotFoundPage from '@/components/pages/NotFoundPage.svelte';
-	import ServerErrorPage from '@/components/pages/ServerErrorPage.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
+	import MaintenancePage from '$lib/components/pages/MaintenancePage.svelte';
+	import NotFoundPage from '$lib/components/pages/NotFoundPage.svelte';
+	import ServerErrorPage from '$lib/components/pages/ServerErrorPage.svelte';
 
 	const pages = {
 		400: MaintenancePage,

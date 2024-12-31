@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import MessagePage from '@/components/pages/MessagePage.svelte';
-	import { logger } from '@/utils/logger';
+	import MessagePage from '$lib/components/pages/MessagePage.svelte';
+	import { logger } from '$lib/utils/logger';
 	import { A } from 'flowbite-svelte';
 
 	logger.debug('/logged-in', $page.data.user?.email);

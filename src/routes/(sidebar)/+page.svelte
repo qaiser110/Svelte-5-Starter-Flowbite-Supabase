@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import Dashboard from '@/components/pages/dashboard/Dashboard.svelte';
-	import MetaTag from '@/components/MetaTag.svelte';
+	import Dashboard from '$lib/components/pages/dashboard/Dashboard.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 	export let data: PageData;
 
 	const path: string = '';

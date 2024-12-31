@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { Card, Chart, Input } from 'flowbite-svelte';
 	import { CalendarMonthOutline } from 'flowbite-svelte-icons';
-	import options from '@/components/pages/graphs/thinmultibars';
-	import LastRange from '@/components/pages/widgets/LastRange.svelte';
-	import More from '@/components/pages/widgets/More.svelte';
+	import options from '$lib/components/pages/graphs/thinmultibars';
+	import LastRange from '$lib/components/pages/widgets/LastRange.svelte';
+	import More from '$lib/components/pages/widgets/More.svelte';
 	import Change from './Change.svelte';
 </script>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import { P } from 'flowbite-svelte';
-	import BackToHome from '@/components/ui/buttons/BackToHome.svelte';
+	import BackToHome from '$lib/components/ui/buttons/BackToHome.svelte';
 	export let title = 'Page not found';
 	export let description =
 		'Oops! Looks like you followed a bad link. If you think this is a problem with us, please	tell us.';

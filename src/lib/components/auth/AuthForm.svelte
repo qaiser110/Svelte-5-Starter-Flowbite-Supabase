@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { LoginType } from '@/schemas/auth';
-	import { logger } from '@/utils/logger';
+	import { LoginType } from '$lib/schemas/auth';
+	import { logger } from '$lib/utils/logger';
 	import {
 		A,
 		Alert,

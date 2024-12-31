@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import FormWrapper from '@/components/auth/FormWrapper.svelte';
-	import MetaTag from '@/components/MetaTag.svelte';
-	import AlertBox from '@/components/ui/AlertBox.svelte';
+	import FormWrapper from '$lib/components/auth/FormWrapper.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
+	import AlertBox from '$lib/components/ui/AlertBox.svelte';
 	import { Button, Input, Label, Spinner } from 'flowbite-svelte';
 	import { fly } from 'svelte/transition';
 

@@ -2,7 +2,7 @@ import type { EmailOtpType } from '@supabase/supabase-js';
 import { error, redirect } from '@sveltejs/kit';
 
 import type { RequestHandler } from './$types';
-import { logger } from '@/utils/logger';
+import { logger } from '$lib/utils/logger';
 
 export const GET: RequestHandler = async ({ url, params, locals: { supabase } }) => {
 	const searchParams = url.searchParams.entries();

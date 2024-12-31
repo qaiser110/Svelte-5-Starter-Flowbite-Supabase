@@ -1,5 +1,5 @@
 <script>
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import { Card, Textarea, ToolbarButton } from 'flowbite-svelte';
 	import {
 		ChevronUpOutline,

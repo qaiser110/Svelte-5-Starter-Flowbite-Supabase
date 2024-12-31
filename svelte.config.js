@@ -9,7 +9,7 @@ const config = {
 
 	kit: {
 		alias: {
-			'@': 'src/lib',
+			$lib: 'src/lib',
 			'@data': 'src/data',
 		},
 		adapter: adapter(),

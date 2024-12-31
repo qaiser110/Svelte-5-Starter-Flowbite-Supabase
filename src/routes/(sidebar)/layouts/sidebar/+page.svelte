@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Dashboard from '@/components/pages/dashboard/Dashboard.svelte';
-	import MetaTag from '@/components/MetaTag.svelte';
-	import Footer from '@/components/layout/Footer.svelte';
+	import Dashboard from '$lib/components/pages/dashboard/Dashboard.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
+	import Footer from '$lib/components/layout/Footer.svelte';
 	import type { PageData } from './$types';
 	export let data: PageData;
 

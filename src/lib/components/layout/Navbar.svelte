@@ -1,7 +1,7 @@
 <script>
-	import Notifications from '@/components/pages/dashboard/NotificationList.svelte';
-	import AppsMenu from '@/components/pages/widgets/AppsMenu.svelte';
-	import UserMenu from '@/components/pages/widgets/UserMenu.svelte';
+	import Notifications from '$lib/components/pages/dashboard/NotificationList.svelte';
+	import AppsMenu from '$lib/components/pages/widgets/AppsMenu.svelte';
+	import UserMenu from '$lib/components/pages/widgets/UserMenu.svelte';
 	import {
 		DarkMode,
 		Dropdown,

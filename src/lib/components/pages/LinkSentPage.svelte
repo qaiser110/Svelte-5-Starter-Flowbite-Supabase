@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { logger } from '@/utils/logger';
+	import { logger } from '$lib/utils/logger';
 	import { A } from 'flowbite-svelte';
 	import AlertBox from '../ui/AlertBox.svelte';
-	import LogoComponent from '@/components/ui/LogoComponent.svelte';
+	import LogoComponent from '$lib/components/ui/LogoComponent.svelte';
 	import BackToHome from '../ui/buttons/BackToHome.svelte';
 
 	let resendLoading = $state(false);

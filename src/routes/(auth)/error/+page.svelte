@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import LnkLogin from '@/components/links/LnkLogin.svelte';
-	import LogoComponent from '@/components/ui/LogoComponent.svelte';
+	import LnkLogin from '$lib/components/links/LnkLogin.svelte';
+	import LogoComponent from '$lib/components/ui/LogoComponent.svelte';
 	import { A, Card } from 'flowbite-svelte';
 
 	let title = '';

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import LinkSentPage from '@/components/pages/LinkSentPage.svelte';
-	import { logger } from '@/utils/logger';
+	import LinkSentPage from '$lib/components/pages/LinkSentPage.svelte';
+	import { logger } from '$lib/utils/logger';
 	import { onMount } from 'svelte';
 
 	interface SuccessMessage {
