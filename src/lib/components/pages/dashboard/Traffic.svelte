@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { Card, Chart } from 'flowbite-svelte';
-	import options from '@/components/pages/graphs/traffic';
+	import options from '$lib/components/pages/graphs/traffic';
 	import SmallPanel from './SmallPanel.svelte';
 	import { DesktopPcOutline, MobilePhoneOutline, TabletOutline } from 'flowbite-svelte-icons';
-	import More from '@/components/pages/widgets/More.svelte';
+	import More from '$lib/components/pages/widgets/More.svelte';
 
 	export let dark: boolean = false;
 </script>

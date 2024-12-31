@@ -2,9 +2,9 @@
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import LnkLogin from '@/components/links/LnkLogin.svelte';
-	import MessagePage from '@/components/pages/MessagePage.svelte';
-	import { logger } from '@/utils/logger';
+	import LnkLogin from '$lib/components/links/LnkLogin.svelte';
+	import MessagePage from '$lib/components/pages/MessagePage.svelte';
+	import { logger } from '$lib/utils/logger';
 
 	let error = $state('');
 

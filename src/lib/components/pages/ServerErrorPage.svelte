@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import { P } from 'flowbite-svelte';
-	import BackToHome from '@/components/ui/buttons/BackToHome.svelte';
+	import BackToHome from '$lib/components/ui/buttons/BackToHome.svelte';
 	export let title = 'Something has gone seriously wrong';
 	export let description =
 		"It's always time for a coffee break. We should be back by the time you finish your coffee.";

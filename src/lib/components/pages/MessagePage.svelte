@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { A, Card, Hr } from 'flowbite-svelte';
 	import type { Snippet } from 'svelte';
-	import LogoComponent from '@/components/ui/LogoComponent.svelte';
+	import LogoComponent from '$lib/components/ui/LogoComponent.svelte';
 
 	let {
 		title,

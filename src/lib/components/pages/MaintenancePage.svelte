@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import { P } from 'flowbite-svelte';
-	import BackToHome from '@/components/ui/buttons/BackToHome.svelte';
+	import BackToHome from '$lib/components/ui/buttons/BackToHome.svelte';
 	export let title = 'Under Maintenance';
 	export let description =
 		'Sorry for the inconvenience but we’re performing some maintenance at the moment. If you need to you can always <a href="/" class="text-primary-700 hover:underline dark:text-primary-500">contact us</a>, otherwise we’ll be back online shortly!.';

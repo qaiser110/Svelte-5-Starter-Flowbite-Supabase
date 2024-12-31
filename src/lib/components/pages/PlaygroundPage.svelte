@@ -1,6 +1,6 @@
 <script>
 	import { Breadcrumb, BreadcrumbItem, Heading } from 'flowbite-svelte';
-	import EmptyCard from '@/components/ui/EmptyCard.svelte';
+	import EmptyCard from '$lib/components/ui/EmptyCard.svelte';
 </script>
 
 <main>

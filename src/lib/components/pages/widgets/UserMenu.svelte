@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import { Avatar, Dropdown, DropdownDivider, DropdownHeader, DropdownItem } from 'flowbite-svelte';
 
 	export let name: string = '';

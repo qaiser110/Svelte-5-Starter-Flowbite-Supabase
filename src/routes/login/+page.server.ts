@@ -1,5 +1,5 @@
-import { authSchema, LoginType } from '@/schemas/auth';
-import { logger } from '@/utils/logger';
+import { authSchema, LoginType } from '$lib/schemas/auth';
+import { logger } from '$lib/utils/logger';
 import type { AuthResponse } from '@supabase/supabase-js';
 import { fail } from '@sveltejs/kit';
 import { message, setError, superValidate } from 'sveltekit-superforms';

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import AuthForm from '@/components/auth/AuthForm.svelte';
-	import OauthSignIn from '@/components/auth/OauthSignIn.svelte';
-	import MetaTag from '@/components/MetaTag.svelte';
-	import LogoComponent from '@/components/ui/LogoComponent.svelte';
+	import AuthForm from '$lib/components/auth/AuthForm.svelte';
+	import OauthSignIn from '$lib/components/auth/OauthSignIn.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
+	import LogoComponent from '$lib/components/ui/LogoComponent.svelte';
 	import { Card, Hr } from 'flowbite-svelte';
 	import type { PageData } from './$types';
 

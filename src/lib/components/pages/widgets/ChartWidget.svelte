@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Change from '@/components/pages/dashboard/Change.svelte';
+	import Change from '$lib/components/pages/dashboard/Change.svelte';
 	import type { ApexOptions } from 'apexcharts';
 	import { Card, Chart, Heading } from 'flowbite-svelte';
 	import LastRange from './LastRange.svelte';

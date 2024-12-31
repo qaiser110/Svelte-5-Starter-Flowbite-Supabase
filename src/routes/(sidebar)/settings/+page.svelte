@@ -1,19 +1,19 @@
 <script lang="ts">
-	import Accounts from '@/components/pages/settings/Accounts.svelte';
-	import Alerts from '@/components/pages/settings/Alerts.svelte';
-	import Emails from '@/components/pages/settings/Emails.svelte';
-	import GeneralInfo from '@/components/pages/settings/GeneralInfo.svelte';
-	import LanguageTime from '@/components/pages/settings/LanguageTime.svelte';
-	import PasswordInfo from '@/components/pages/settings/PasswordInfo.svelte';
-	import ProfilePicture from '@/components/pages/settings/ProfilePicture.svelte';
-	import Sessions from '@/components/pages/settings/Sessions.svelte';
-	import SocialAccounts from '@/components/pages/settings/SocialAccounts.svelte';
+	import Accounts from '$lib/components/pages/settings/Accounts.svelte';
+	import Alerts from '$lib/components/pages/settings/Alerts.svelte';
+	import Emails from '$lib/components/pages/settings/Emails.svelte';
+	import GeneralInfo from '$lib/components/pages/settings/GeneralInfo.svelte';
+	import LanguageTime from '$lib/components/pages/settings/LanguageTime.svelte';
+	import PasswordInfo from '$lib/components/pages/settings/PasswordInfo.svelte';
+	import ProfilePicture from '$lib/components/pages/settings/ProfilePicture.svelte';
+	import Sessions from '$lib/components/pages/settings/Sessions.svelte';
+	import SocialAccounts from '$lib/components/pages/settings/SocialAccounts.svelte';
 	import { Breadcrumb, BreadcrumbItem, Heading } from 'flowbite-svelte';
-	import Footer from '@/components/layout/Footer.svelte';
+	import Footer from '$lib/components/layout/Footer.svelte';
 
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 	import Users from '@data/users.json';
-	import MetaTag from '@/components/MetaTag.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	const path: string = '/settings';
 	const description: string = 'Settings examaple - Flowbite Svelte Admin Dashboard';

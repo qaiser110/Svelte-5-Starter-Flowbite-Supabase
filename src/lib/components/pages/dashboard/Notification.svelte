@@ -1,5 +1,5 @@
 <script lang="ts">
-	import IconAvatar from '@/components/pages/widgets/IconAvatar.svelte';
+	import IconAvatar from '$lib/components/pages/widgets/IconAvatar.svelte';
 
 	export let src: string = '';
 	export let when: string = '';

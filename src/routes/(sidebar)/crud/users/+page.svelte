@@ -18,11 +18,11 @@
 		TrashBinSolid,
 	} from 'flowbite-svelte-icons';
 	import Users from '@data/users.json';
-	import { imagesPath } from '@/utils/variables';
+	import { imagesPath } from '$lib/utils/variables';
 
 	import User from './User.svelte';
 	import Delete from './Delete.svelte';
-	import MetaTag from '@/components/MetaTag.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	let openUser: boolean = false; // modal control
 	let openDelete: boolean = false; // modal control
