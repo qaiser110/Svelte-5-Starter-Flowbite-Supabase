@@ -19,9 +19,6 @@
 		"stop": "supabase stop",
 		"start": "supabase start"
 	},
-	"engines": {
-		"node": "22"
-	},
 	"devDependencies": {
 		"@playwright/test": "^1.45.3",
 		"@sveltejs/adapter-auto": "^3.0.0",
