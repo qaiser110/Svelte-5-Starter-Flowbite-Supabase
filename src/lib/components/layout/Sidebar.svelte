@@ -82,7 +82,7 @@
 			icon: LockSolid,
 			children: {
 				'Sign in': '/login',
-				'Passwordless Sign in': '/login?type=passwordless',
+				'Passwordless Sign in': '/login?type=magic-link',
 				'Sign up': '/signup',
 				'Forgot password': '/forgot-password',
 				'Reset password': '/reset-password',

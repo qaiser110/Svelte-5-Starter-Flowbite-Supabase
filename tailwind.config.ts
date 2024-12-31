@@ -1,7 +1,7 @@
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
-import flowbite from 'flowbite/plugin'
-import type { Config } from 'tailwindcss'
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
+import flowbite from 'flowbite/plugin';
+import type { Config } from 'tailwindcss';
 
 export default {
 	content: [
@@ -32,4 +32,4 @@ export default {
 	plugins: [typography, forms, flowbite],
 
 	darkMode: 'class',
-} satisfies Config
+} satisfies Config;

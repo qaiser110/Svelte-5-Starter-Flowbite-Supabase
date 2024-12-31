@@ -4,6 +4,7 @@
 
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { Toaster } from 'svelte-sonner';
 
 	let { supabase, session } = data;
 
@@ -13,12 +14,7 @@
 		session = data.session;
 	});
 
-	// console.log('~~~~~ $inspect(data);');
-	$inspect(`$inspect ~~~~~ user: ${data.user?.email}`);
-	// $inspect({
-	// 	user: data.user?.email,
-	// 	// session: data.session,
-	// });
+	$inspect(`$inspect > user.email: ${data.user?.email}`);
 
 	onMount(() => {
 		const { data: authListener } = supabase.auth.onAuthStateChange((event, newSession) => {
@@ -34,5 +30,7 @@
 <svelte:head>
 	<title>User Management</title>
 </svelte:head>
+
+<Toaster richColors />
 
 {@render children()}

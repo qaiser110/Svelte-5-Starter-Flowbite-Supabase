@@ -1,0 +1,77 @@
+// Login server-side callback
+// /callback/auth
+
+// message page
+/auth/success
+/auth/sent/[context]
+/auth/sent/magic-link
+/auth/sent/signup-link
+
+/logged-in
+http://127.0.0.1:54321
+/auth/v1/verify?token=pkce_90e1559b43923c2b86849a8289fe0435d3cf240ac88d22df1a25150e&type=signup&redirect_to=http://localhost:5173/logged-in
+/auth/v1/verify?token=26fa2a9879fc3ea589b826b9e6f8dc10c96bf1368e41aabf7f644cfa&type=signup&redirect_to=http://localhost:5173/logged-in
+
+// Click verify link
+/confirm
+/auth/verify/magic-link
+/auth/verify/signup-link
+/auth/verify/reset-pwd-link
+
+
+Delete
+src/routes/api/auth/resend/[type]/+server.ts
+src/routes/(auth)/signup/verify/+page.svelte
+
+src/routes/api/auth/signup/+server.ts
+
+
+Under Maintenance
+http://localhost:5173/errors/400
+
+
+<<<<<>>>>> data <<<<<>>>>> Response {
+  status: 400,
+  statusText: '',
+  headers: Headers { 'content-length': '110', 'content-type': 'application/json' },
+  body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true },
+  bodyUsed: false,
+  ok: false,
+  redirected: false,
+  type: 'default',
+  url: ''
+}
+<<<<<>>>>> data <<<<<>>>>> {
+  name: 'ApiCustomError',
+  message: 'There was an issue, Please contact support.',
+  field: 'email',
+  status: 400
+}
+
+<<<<<>>>>> data <<<<<>>>>> Response {
+  status: 200,
+  statusText: '',
+  headers: Headers { 'content-length': '12', 'content-type': 'application/json' },
+  body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true },
+  bodyUsed: false,
+  ok: true,
+  redirected: false,
+  type: 'default',
+  url: ''
+}
+<<<<<>>>>> data <<<<<>>>>> { q: 'errX' }
+
+[DEBUG] (auth)/layout.server >>>   URL {
+  href: 'http://localhost:5173/auth/sent/signup-link?email=',
+  origin: 'http://localhost:5173',
+  protocol: 'http:',
+  username: '',
+  password: '',
+  host: 'localhost:5173',
+  hostname: 'localhost',
+  port: '5173',
+  pathname: '/auth/sent/signup-link',
+  search: '?email=',
+  searchParams: URLSearchParams { 'email' => '' },
+  hash: ''
+}

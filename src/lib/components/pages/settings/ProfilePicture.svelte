@@ -23,10 +23,3 @@
 		</div>
 	</div>
 </Card>
-
-<!--
-@component
-[Go to docs](https://flowbite-svelte-admin-dashboard.vercel.app/)
-## Props
-@prop export let src: string;
--->

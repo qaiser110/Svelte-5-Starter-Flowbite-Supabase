@@ -9,7 +9,7 @@
 	const subtitle: string = 'Playground Sidebar';
 </script>
 
-<MetaTag {path} {description} title={metaTitle} {subtitle} />
+<MetaTag {path} {description} title={metaTitle} ogImageTitle={subtitle} />
 
 <div
 	id="main-content"
