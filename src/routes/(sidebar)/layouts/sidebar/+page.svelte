@@ -11,7 +11,7 @@
 	const subtitle: string = 'Sidebar Layout';
 </script>
 
-<MetaTag {path} {description} {title} {subtitle} />
+<MetaTag {path} {description} {title} ogImageTitle={subtitle} />
 
 <main class="p-4">
 	<Dashboard {data} />

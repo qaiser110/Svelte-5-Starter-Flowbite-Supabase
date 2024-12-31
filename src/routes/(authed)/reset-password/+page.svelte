@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import FormWrapper from '@/components/auth/FormWrapper.svelte';
 	import MetaTag from '@/components/MetaTag.svelte';
 	import AlertBox from '@/components/ui/AlertBox.svelte';
 	import { Button, Input, Label, Spinner } from 'flowbite-svelte';
+	import { toast } from 'svelte-sonner';
 	import { fly } from 'svelte/transition';
 
 	let successMsg = $state('');
@@ -11,35 +13,33 @@
 	let loading = $state(false);
 
 	const onsubmit = async (e: Event) => {
-		loading = true;
+		// e.preventDefault();
 		const formData = new FormData(e.target as HTMLFormElement);
-		const email = formData.get('email') as string;
+		const password = formData.get('password') as string;
 
-		const { error } = await $page.data.supabase.auth.resetPasswordForEmail(email, {
-			redirectTo: `${$page.url.origin}/reset-password`,
-		});
+		const { error } = await $page.data.supabase.auth.updateUser({ password });
 
-		loading = false;
+		loading = true;
 
 		if (error) {
-			errorMsg = error.message || 'Errors requesting password reset.';
+			errorMsg =
+				error.message || 'Errors on this form. Please try again or contact the administrator.';
 		} else {
-			successMsg = 'Reset Password link sent. Please check your inbox.';
+			toast.success('Password Reset Successfully.');
+			goto('/');
 		}
 	};
 
-	let title = 'Forgot your password?';
-	const pageDescription = "Submit your email and we'll send you a reset password link!";
+	const title = 'Reset your password';
 </script>
 
 <MetaTag
 	{title}
-	ogImageTitle="Forgot password"
-	description="Forgot password example - Flowbite Svelte Admin Dashboard"
-	path="/forgot-password"
+	ogImageTitle="Reset password"
+	description="Reset password example - Flowbite Svelte Admin Dashboard"
+	path="/reset-password"
 />
-
-<FormWrapper {title} {pageDescription}>
+<FormWrapper {title}>
 	<form class="mt-8 space-y-6" {onsubmit}>
 		{#if errorMsg}
 			<ul transition:fly>
@@ -53,12 +53,12 @@
 		{/if}
 
 		<div>
-			<Label for="email" class="mb-2">Your email</Label>
+			<Label for="password" class="mb-2">Enter new password</Label>
 			<Input
-				type="email"
-				name="email"
-				id="email"
-				placeholder="name@company.com"
+				type="password"
+				name="password"
+				id="password"
+				placeholder="••••••••"
 				required
 				class="border outline-none"
 			/>

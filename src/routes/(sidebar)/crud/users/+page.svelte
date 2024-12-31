@@ -34,7 +34,7 @@
 	const subtitle: string = 'CRUD Users';
 </script>
 
-<MetaTag {path} {description} {title} {subtitle} />
+<MetaTag {path} {description} {title} ogImageTitle={subtitle} />
 
 <main class="relative h-full w-full overflow-y-auto bg-white dark:bg-gray-800">
 	<div class="p-4">

@@ -10,7 +10,7 @@
 	const subtitle: string = 'Stacked Layout';
 </script>
 
-<MetaTag {path} {description} {title} {subtitle} />
+<MetaTag {path} {description} {title} ogImageTitle={subtitle} />
 
 <main class="py-4">
 	<Dashboard {data} />

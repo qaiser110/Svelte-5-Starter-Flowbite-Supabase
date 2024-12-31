@@ -16,6 +16,8 @@
 		}
 	});
 
+	console.log('$page.data', $page.data);
+
 	const title: string = 'Sign in / Register';
 	const path: string = '/login';
 	const description: string = 'Sign in or Register to platform';
@@ -27,7 +29,7 @@
 	const hrClass = 'my-4 text-2xl font-bold text-gray-900 dark:text-white';
 </script>
 
-<MetaTag {path} {description} {title} subtitle={title} />
+<MetaTag {path} {description} {title} ogImageTitle={title} />
 
 <main class={mainClass}>
 	<div class={mainDivClass}>

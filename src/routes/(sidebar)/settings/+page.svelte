@@ -21,7 +21,7 @@
 	const subtitle: string = 'Settings';
 </script>
 
-<MetaTag {path} {description} {title} {subtitle} />
+<MetaTag {path} {description} {title} ogImageTitle={subtitle} />
 
 <main class="p-4">
 	<div class="grid grid-cols-1 space-y-2 dark:bg-gray-900 xl:grid-cols-3 xl:gap-3.5">

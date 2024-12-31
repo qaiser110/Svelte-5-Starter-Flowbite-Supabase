@@ -26,6 +26,6 @@
 	const subtitle: string = `${index} page`;
 </script>
 
-<MetaTag {path} {description} {title} {subtitle} />
+<MetaTag {path} {description} {title} ogImageTitle={subtitle} />
 
 <svelte:component this={component} />

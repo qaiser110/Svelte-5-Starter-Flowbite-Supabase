@@ -6,9 +6,9 @@
 	export let path: string = '';
 	export let description: string = '';
 	export let title: string = '';
-	export let subtitle: string = '';
+	export let ogImageTitle: string = '';
 
-	let imgsrc = `https://open-graph-vercel.vercel.app/api/flowbite-svelte-admin-dashboard?title=${subtitle}`;
+	let imgsrc = `https://open-graph-vercel.vercel.app/api/flowbite-svelte-admin-dashboard?title=${ogImageTitle}`;
 
 	let og_url: string = `https://flowbite-svelte-admin-dashboard.vercel.app${path}`;
 </script>
